@@ -1,0 +1,159 @@
+﻿<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .summary-widget {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .chart {
+            margin-bottom: 20px;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="summary-widget">
+            <h2>Purchase Pending Orders</h2>
+            <p>@ViewBag.OrderStatus</p>
+        </div>
+
+        <div class="summary-widget">
+            <h2>Total Out-of-Stock Products</h2>
+            <p>@ViewBag.OutOfStoke</p>
+        </div>
+
+        <div class="summary-widget">
+            <h2>Total Products Exceeding Minimum Stock Limit</h2>
+            <p>@ViewBag.MinLimExceed</p>
+        </div>
+        <div class="summary-widget">
+            <h2>Sell Pending Order</h2>
+            <p>@ViewBag.pendingSale</p>
+        </div>
+        <div class="chart">
+            
+        </div>
+    </div>
+    
+    @if (Context.Session.GetInt32("role")==1)
+    {
+        
+    <div style="display: flex; justify-content: center;">
+            <div style="margin-right: 20px;">
+                <canvas id="monthlyTurnoverChart" width="600" height="400"></canvas>
+            </div>
+            <div>
+                <canvas id="yearlyTurnoverChart" width="600" height="400"></canvas>
+            </div>
+        </div>
+    }
+
+        <script>
+            fetch('/Home/GetMonthlyTurnover')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch monthly turnover');
+                    }
+                    return response.json();
+                })
+                .then(monthlyTurnover => {
+                    console.log('Monthly turnover:', monthlyTurnover);
+                    var ctx = document.getElementById('monthlyTurnoverChart').getContext('2d');
+                    var monthlyTurnoverChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Monthly Turnover'],
+                            datasets: [{
+                                label: 'Monthly Turnover',
+                                data: [monthlyTurnover],
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching monthly turnover:', error);
+                });
+
+            fetch('/Home/GetYearlyTurnover')
+                .then(response => response.json())
+                .then(yearlyTurnover => {
+                    var ctx = document.getElementById('yearlyTurnoverChart').getContext('2d');
+                    var yearlyTurnoverChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Yearly Turnover'],
+                            datasets: [{
+                                label: 'Yearly Turnover',
+                                data: [yearlyTurnover],
+                                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching yearly turnover:', error);
+                });
+
+            fetch('/Sales/GetBestPerformingItem')
+                .then(response => response.json())
+                .then(bestPerformingItem => {
+                    var bestPerformingItemElement = document.getElementById('bestPerformingItem');
+                    if (bestPerformingItem && bestPerformingItem.ProductName && bestPerformingItem.TotalQuantity) {
+                        bestPerformingItemElement.innerHTML = `Best performing item: ${bestPerformingItem.ProductName} (Total Quantity: ${bestPerformingItem.TotalQuantity})`;
+                    } else {
+                        bestPerformingItemElement.innerHTML = 'No sales data available.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching best product:', error);
+                });
+
+        </script>
+</body>

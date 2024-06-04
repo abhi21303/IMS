@@ -1,0 +1,54 @@
+﻿@model List<Product>
+
+<style>
+    .sell-btn {
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div class="container mt-5 row">
+        <div>
+            <h1>Sell Product</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="searchInput">Search Product:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="searchInput" name="SearchInput" placeholder="Enter product name">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="inventoryTableBody">
+                @{
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td>@obj.ProductId</td>
+                            <td>@obj.Name</td>
+                            <td>@obj.Category.CategoryName</td>
+                            <td>@obj.Price</td>
+                            <td>
+                                <a class="btn btn-primary" type="button" asp-controller="Inventory" asp-action="SellingPage" asp-route-id="@obj.ProductId">Sell</a>
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</body>

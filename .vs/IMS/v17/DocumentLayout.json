@@ -1,0 +1,297 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\inventorytransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\inventorytransactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\views\\inventory\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\views\\inventory\\sell.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\views\\inventory\\sell.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\ims\\ims\\views\\inventorytransaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F5A32E58-DF69-42C3-8733-3CE1786F1E17}|IMS\\IMS.csproj|solutionrelative:ims\\views\\inventorytransaction\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "IMS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "IMS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAQwIoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T02:38:45.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T07:05:16.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignUpController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\SignUpController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\SignUpController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\SignUpController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\SignUpController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T07:05:08.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T07:05:03.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T07:04:59.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAmwIYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T07:04:43.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAwDkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T06:07:53.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "IMS\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "IMS\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAF0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T06:07:40.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Sell.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Inventory\\Sell.cshtml",
+              "RelativeDocumentMoniker": "IMS\\Views\\Inventory\\Sell.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Inventory\\Sell.cshtml",
+              "RelativeToolTip": "IMS\\Views\\Inventory\\Sell.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T04:43:04.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "IMS\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Models\\Order.cs",
+              "RelativeToolTip": "IMS\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T04:43:01.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Program.cs",
+              "RelativeDocumentMoniker": "IMS\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Program.cs",
+              "RelativeToolTip": "IMS\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T08:26:14.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\InventoryController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T10:12:02.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Inventory\\Index.cshtml",
+              "RelativeDocumentMoniker": "IMS\\Views\\Inventory\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Inventory\\Index.cshtml",
+              "RelativeToolTip": "IMS\\Views\\Inventory\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T10:05:55.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "IMS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "IMS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAqwJsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T09:54:14.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\SalesController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\SalesController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\SalesController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\SalesController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:52:44.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\InventoryTransaction\\Index.cshtml",
+              "RelativeDocumentMoniker": "IMS\\Views\\InventoryTransaction\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Views\\InventoryTransaction\\Index.cshtml",
+              "RelativeToolTip": "IMS\\Views\\InventoryTransaction\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAA4AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T07:22:55.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventoryTransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\InventoryTransactionController.cs",
+              "RelativeDocumentMoniker": "IMS\\Controllers\\InventoryTransactionController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\IMS\\IMS\\Controllers\\InventoryTransactionController.cs",
+              "RelativeToolTip": "IMS\\Controllers\\InventoryTransactionController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:22:48.719Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

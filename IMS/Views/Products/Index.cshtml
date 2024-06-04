@@ -1,0 +1,94 @@
+﻿@model List<Product>
+
+<style>
+    .icon{
+        font-weight:900 !important; 
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class=" col-6">
+                <h2 class="">Products</h2>
+            </div>
+            <div class="col-6 text-end">
+                @{
+                    if (Context.Session.GetString("user") != null)
+                    {
+                        if (Context.Session.GetInt32("role") == 1)
+                        {
+                            <a asp-controller="Products" asp-action="Add" class="btn btn-dark">Add Product</a>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <form method="post">
+
+    <div class="form-group">
+        <label for="searchInput">Search Product:</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="searchInput" name="SearchInput" placeholder="Enter product name">
+            <div class="input-group-append">
+                <input class="btn btn-primary" type="submit" value="Search" />
+            </div>
+        </div>
+    </div>
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var obj in Model.OrderBy(x => x.Price))
+                {
+                    <tr>
+                        <td>@obj.Name</td>
+                        <td>@obj.Price</td>
+                        <td>
+                            <div class="w-45 btn-group" role="group">
+                                <div>
+                                    @{
+                                        if (Context.Session.GetString("user") != null)
+                                        {
+                                            if (Context.Session.GetInt32("role") == 1 || Context.Session.GetInt32("role") == 2)
+                                            {
+
+                                                <a asp-controller="Products" asp-action="Edit" asp-route-id="@obj.ProductId" class="btn btn-primary mx-2">Edit</a>
+                                            }
+                                        }
+                                    }
+                                </div>
+                                <div>
+                                    <a asp-controller="Products" asp-action="Show" asp-route-id="@obj.ProductId" class="btn btn-dark mx-2">Show Details</a>
+                                </div>
+                                <div>
+                                    @{
+                                        if (Context.Session.GetString("user") != null)
+                                        {
+                                            if (Context.Session.GetInt32("role") == 1 )
+                                            {
+
+                                                <a asp-controller="Products" asp-action="Delete" asp-route-id="@obj.ProductId" class="btn btn-danger mx-2">Delete</a>
+                                            }
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+
+
+
+        </tbody>
+    </table>
+</body>

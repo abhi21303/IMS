@@ -1,0 +1,109 @@
+﻿@model OrderDetail
+@{
+    decimal totalAmount = Model.UnitPrice * Model.Quantity;
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 24px;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .order-detail {
+        border-top: 2px solid #007bff;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+        .order-detail .total {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+    .back-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .back-btn:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div class="container">
+    <h1>Order Details</h1>
+    <div class="order-detail">
+        <input type="number" value="@Model.OrderId" asp-for="OrderId" hidden />
+        <p><strong>Order ID:</strong> @Model.OrderId</p>
+        <input type="number" value="@Model.ProductId" asp-for="ProductId" hidden />
+        <p><strong>Product ID:</strong> @Model.ProductId</p>
+        
+        <input type="text" value="@Model.Product.Name" asp-for="@Model.Product.Name" hidden />
+        <p><strong>Product Name:</strong> @Model.Product.Name</p>
+        <input type="text" value="@Model.Product.Description" asp-for="@Model.Product.Description" hidden/>
+        <p><strong>Product Description:</strong> @Model.Product.Description</p>
+        <input type="number" value="@Model.Quantity" asp-for="Quantity" hidden />
+        <p><strong>Quantity:</strong> @Model.Quantity</p>
+        <input type="number" value="@Model.UnitPrice" asp-for="UnitPrice" hidden />
+        <p><strong>Price per Unit:</strong> @Model.UnitPrice</p>
+        <p class="total"><strong>Total Order Amount:</strong> @totalAmount</p>
+    </div>
+    <a asp-action="Index" asp-controller="Order" class="btn btn-outline-primary">Back to Order Page</a>
+    <a id="generateBillBtn" class="btn btn-primary" asp-controller="Order" asp-action="GeneratePDF" asp-route-id="@Model.OrderId">Generate PDF</a>
+    
+</div>
+<script>
+    document.getElementById("generateBillBtn").addEventListener("click", function () {
+        var orderDetail = {
+            OrderId: @Model.OrderId,
+            ProductId: @Model.ProductId,
+            ProductName: @Model.Product.Name,
+            ProductDescription: @Model.Product.Description,
+            Quantity: @Model.Quantity,
+            UnitPrice: @Model.UnitPrice,
+            TotalAmount: @totalAmount
+            };
+
+        // Send order detail to server for PDF generation
+        fetch('/Order/GeneratePDF', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(orderDetail)
+        }).then(response => {
+            // Handle response if needed
+            console.log('PDF bill generated successfully.');
+        }).catch(error => {
+            console.error('Error generating PDF bill:', error);
+        });
+    });
+</script>

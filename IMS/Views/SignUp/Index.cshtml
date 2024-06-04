@@ -1,0 +1,124 @@
+﻿@model User
+
+@if (TempData["error"] != null)
+{                                           
+    <h4 class="text-danger">@TempData["error"]</h4>
+}
+@{
+    var roles = ViewBag.Roles as SelectList;
+}
+<style>
+    body {
+        background-color: #faf0fa; /* Light gray background */
+        color: #333; /* Dark text color */
+    }
+/* 
+    .container {
+        padding-top: 20px;
+    }
+ */
+    .form {
+        border: 2px solid black;
+        border-radius: 27px;
+        padding: 50px 36px;
+        margin-top: 49px;
+    }
+
+    .form-control {
+        background-color:transparent;
+        color: #333; /* Dark text color */
+        border: none;
+        border-bottom: 2px solid #333; /* Dark border bottom */
+        border-radius: 0;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #333;
+            background-color: transparent;
+            color: #333;
+        }
+
+    .checkbox-label {
+        color: #333; /* Dark text color */
+    }
+
+    .btn-create-account {
+        background-color: #333; /* Dark button background */
+        border-color: #333;
+        border-radius: 25px;
+        font-weight: bold;
+        color: #fff; /* White text color */
+        transition: all 0.3s ease;
+        width: 125px;
+    }
+
+        .btn-create-account:hover {
+            background-color: #555; /* Darker button background on hover */
+            border-color: #555;
+        }
+
+    .form-check-input:checked {
+        background-color: #0d6efd;
+    }
+
+    .btn-create-account {
+        background-color: #333; /* Dark button background */
+        border-color: #333;
+        border-radius: 25px;
+        font-weight: bold;
+        color: #fff; /* White text color */
+        transition: all 0.5s ease;
+        width: 125px;
+    }
+
+        .btn-create-account:hover {
+            background-color: #555; /* Darker button background on hover */
+            border-color: #555;
+            color: #fff; /* Change text color to white */
+            transform: translateY(-5px); /* Move button up on hover */
+        }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form method="post" class="form">
+                    <div class="mb-3">
+                        <select asp-for="RoleId" asp-items="@roles" class="form-control">
+                            <option value="-1">Select Role</option>
+                        </select>
+                        <span asp-validation-for="RoleId" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input asp-for="UserName" class="form-control" placeholder="Enter your User Name">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input asp-for="Email" class="form-control" placeholder="Enter your email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input asp-for="Password" class="form-control" placeholder="Create a password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm your password">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" required>
+                        <label class="form-check-label checkbox-label">
+                            I agree to the <a href="#" class="text-decoration-none">terms and conditions</a>
+                        </label>
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn btn-create-account btn-block mt-4 mb-5"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

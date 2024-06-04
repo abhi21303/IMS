@@ -1,0 +1,19 @@
+﻿@model Product
+
+<h2>Purchase Confirmation</h2>
+
+<p>Product Name: @ViewData["ProductName"]</p>
+<p>Product Price: @ViewData["ProductPrice"]</p>
+<p>Quantity: @ViewData["Quantity"]</p>
+<p>Total Amount: @ViewData["Amount"]</p>
+
+
+<form method="post" >
+    <input asp-for="ProductId" value="@Model.ProductId" hidden/>
+    <input asp-for="Name" value="@ViewData["ProductName"]" hidden/>
+    <input asp-for="Price" value="@ViewData["ProductPrice"]" hidden />
+    <input asp-for="Quantity" value="@ViewData["Quantity"]" hidden/>
+    
+    <input type="number" name="Amount" value="@ViewData["Amount"]" hidden/>
+    <input type="submit" value="Confirm Purchase" class="btn btn-primary" />
+</form>

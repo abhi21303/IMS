@@ -1,0 +1,138 @@
+﻿@model User
+
+@if(TempData["error"]!=null){
+    <h4 class="text-danger">@TempData["error"]</h4>
+}
+@{
+    var roles = ViewBag.Roles as SelectList;
+}
+<style>
+    body {
+        background-color: #faf0fa; /* Light gray background */
+        color: #333; /* Dark text color */
+       
+	}
+
+
+    .form{
+        border: 2px solid black;
+        border-radius: 27px;
+        padding: 63px 36px;
+        margin-top: 49px;
+    
+    } 
+
+    .form-control {
+        background-color: #fff; /* White background */
+        border: none;
+        border-bottom: 2px solid #333; /* Dark border bottom */
+        border-radius: 0;
+        color: #333; /* Dark text color */
+    }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #333;
+            background-color: transparent;
+            color: #333;
+        }
+
+        /* Set text color to dark */
+        .form-control::placeholder,
+        .form-control {
+            color: #333;
+            background-color:transparent;
+        }
+
+    .form-label {
+        color: #333;
+    }
+
+    .form-check-input:checked {
+        background-color: #0d6efd;
+       
+    }
+
+    .btn-primary {
+        background-color: #333; /* Dark button background */
+        border-color: #333;
+        border-radius: 25px;
+        font-weight: bold;
+    }
+
+        .btn-primary:hover {
+            background-color: #555; /* Darker button background on hover */
+            border-color: #555;
+        }
+
+    .btn-login {
+        background-color: #333;
+        border-color: #333;
+        border-radius: 25px;
+        font-weight: bold;
+        color: #fff;
+        transition: all 0.5s ease;
+        width: 125px;
+    }
+
+        .btn-login:hover {
+            background-color: #555;
+            border-color: #555;
+            color: #fff; /* Change text color to white */
+            transform: translateY(-5px); /* Move button up on hover */
+        }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form method="post" class="form" onsubmit="return validate()">
+                    <div class="mb-4">
+                        <select asp-for="RoleId" asp-items="@roles" class="form-control">
+                            <option value="-1">Select Role</option>
+                        </select>   
+                        <span asp-validation-for="RoleId" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <input asp-for="Email" class="form-control" placeholder="Email address" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <input asp-for="Password" class="form-control" placeholder="Password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked>
+                                <label class="form-check-label" for="form2Example31"> Remember me </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a asp-action="ForgotPassword" asp-controller="Login" class="text-decoration-none">Forgot password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-login btn btn-primary btn-block mb-4 w-100">Log in</button>
+                    <div class="text-center">
+                        <p>Not a member? <a asp-action="Index" asp-controller="SignUp" class="text-decoration-none">Sign Up</a></p>
+                        <p>or sign up with:</p>
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+
+</body>

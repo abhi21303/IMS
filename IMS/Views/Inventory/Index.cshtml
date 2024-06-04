@@ -1,0 +1,64 @@
+﻿@model List<Product>
+@{
+    <h2> @TempData["PurchaseError"]</h2>
+}
+<style>
+    .sell-btn{
+        margin-top:10px;
+    }
+</style>
+<body>
+    <div class="container mt-5 row">
+        <div class="col-md-6">
+
+        <h1 >Inventory Management System</h1>
+        </div>
+        
+        <div class="col-md-6 text-end">
+        <h3><a asp-controller="Inventory" asp-action="Sell" class="btn btn-danger sell-btn">Sell</a></h3>
+        </div>
+        <form method="post">
+
+        <div class="form-group">
+            <label for="searchInput">Search Product:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="searchInput" name="SearchInput" placeholder="Enter product name">
+                <div class="input-group-append">
+                    <input class="btn btn-primary" type="submit" value="Search" ></input>
+                </div>
+            </div>
+        </div>
+
+        </form >
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="inventoryTableBody">
+                @{
+                    @foreach(var obj in Model){
+                        <tr>
+                            <td>@obj.ProductId</td>
+                            <td>@obj.Name</td>
+                            <td>@obj.Category.CategoryName</td>
+                            <td>@obj.Price</td>
+                            <td>@obj.Quantity</td>
+                            <td>
+                                <a class="btn btn-primary" type="button" asp-controller="Inventory" asp-action="Purchase" asp-route-id="@obj.ProductId">Add</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>

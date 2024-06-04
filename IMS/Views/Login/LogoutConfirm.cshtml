@@ -1,0 +1,49 @@
+﻿<style>
+
+
+    .profile-container {
+        text-align: center;
+        margin-top: 160px;
+    }
+
+    .profile-message {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        border-radius: 25px;
+        font-weight: bold;
+    }
+
+    .btn-danger {
+        background-color: #ff0000;
+        border-color: #ff0000;
+    }
+
+        .btn-danger:hover {
+            background-color: #e60000;
+            border-color: #e60000;
+        }
+
+    .netflix-Home-btn {
+        font-weight: bold;
+        border-radius: 30px; /* Adjusted border radius */
+        padding: 10px 20px; /* Adjusted padding */
+
+
+        background-color: #e60000;
+    }
+
+</style>
+<body>
+    <form method="post">
+
+        <div class="container">
+            <div class="profile-container">
+                <h1 class="profile-message">Logout Successfully</h1>
+                <a asp-action="Index" asp-controller="Login" class="btn btn-primary">Back To Login</a>
+ 
+            </div>
+        </div>
+    </form>
+</body>

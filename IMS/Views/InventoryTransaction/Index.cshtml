@@ -1,0 +1,48 @@
+﻿@model List<InventoryTransaction>
+
+<body>
+    <div class="container mt-5 row">
+        <div class="col-md-6">
+
+            <h1>Inventory Transaction</h1>
+        </div>
+
+        <form method="post">
+
+            <div class="form-group">
+                <label for="searchInput">Search Product:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchInput" name="searchInput" placeholder="Enter product name">
+                    <div class="input-group-append">
+                        <input class="btn btn-primary" type="submit" value="Search"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Product Id</td>
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Date</td>
+                </tr>
+            </thead>
+            <tbody id="inventoryTableBody">
+                @{
+                    @foreach(var obj in Model)
+                    {
+                        <tr>
+                            <td>@obj.ProductId</td>
+                            <td>@obj.Product.Name</td>
+                            <td>@obj.Quantity</td>
+                            <td>@obj.TransactionDate</td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
